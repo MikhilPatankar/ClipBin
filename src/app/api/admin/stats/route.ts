@@ -3,6 +3,7 @@ import { getAdminStats } from '@/lib/clips';
 import { getEnvValue } from '@/lib/supabase/server';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export async function GET(req: NextRequest) {
   try {
